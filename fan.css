@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#blade{
+    width: 10px;
+    height: 60px;
+    border-radius: 2px;
+    background-color: black;
+    margin: auto;
+    position: relative;
+    top: 5px;
+    transform: rotate(0deg);
+}
+#blade2{
+    width: 10px;
+    height: 60px;
+    border-radius: 2px;
+    background-color: black;
+    margin: auto;
+    position: relative;
+    top: 5px;
+    transform: rotate(0deg);
+}
+@keyframes rotate2{
+    0%{
+       transform: rotate(0deg);
+    }
+    100%{
+    transform: rotate(360deg);
+    }
+}
+.circle2{
+    width: 130px;
+    height: 130px;
+    background-color: white transparent;
+    border-radius: 50%;
+}
+.circle{
+    width: 150px;
+    height: 150px;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    left: 25px;
+    top: 30px;
+    z-index: 9999;
+    padding: 10px;
+    animation: rotate;
+    animation-timing-function: linear;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;     /* not needed because it is a default value*/
+}
+@keyframes rotate{
+    0%{
+       transform: rotate(0deg);
+    }
+    100%{
+    transform: rotate(360deg);
+    }
+}
+.box{
+    width: 200px;
+    height: 450px;
+    background-color: aqua;
+    margin: 60px auto;
+    border-radius: 10px;
+    position: relative;
+    background-image: linear-gradient(180deg, violet, magenta);
+}
+.handle1{
+    width: 15px;
+    height: 70px;
+    background-color: gray;
+    position: absolute;
+    top: 180px;
+    left: 92px;
+}
+.handle2{
+    width: 30px;
+    height: 70px;
+    background-color: blue;
+    border-radius: 8px;
+    position: absolute;
+    top: 260px;
+    left: 85px;
+}
+.btn{
+    border: 2px thin black;
+    width: 90px;
+    height: 50px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    position: absolute;
+    top: 340px;
+    left: 55px;
+}
+#control{
+    background-color: blue;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    width: 50px;
+    height: 25px;
+    border: none;
+}

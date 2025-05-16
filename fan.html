@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fan.css">
+</head>
+<body>
+    <div class="box">
+        <div class="circle">
+            <div class="circle2">
+            <div id="blade"></div>
+            <div id="blade2"></div>
+            </div>
+        </div>
+        <div class="handle1"></div>
+        <div class="handle2"></div>
+        <div class="btn">
+            <button id="control" onclick="controlBtn()">Off</button>
+        </div>
+    </div>
+</body>
+<script>
+    function controlBtn(){
+        let button = document.getElementById("control");
+        let fan = document.querySelector(".circle");
+
+        if (fan.style.animationPlayState === "paused") {
+            fan.style.animationPlayState = "running";
+            button.innerText = "Off";
+        } else {
+            fan.style.animationPlayState = "paused";
+            button.innerText = "On";
+        }
+    }
+</script>
+</html>
